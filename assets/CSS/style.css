@@ -28,6 +28,9 @@ span > a:hover{padding: 15px; font-size: 1.7rem; color: #fff3f2; background-colo
 .font3{font-size: 1.5rem;font-family: 'Quicksand';}
 
 
+/* Header */
+header{position: fixed; z-index: 2;}
+
 /* cores */
 /*  
 #F0F0F2
