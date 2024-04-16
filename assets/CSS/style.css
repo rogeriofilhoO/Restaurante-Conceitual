@@ -2,20 +2,19 @@
 
 *{margin: 0; padding: 0;}
 
-body {background-color: #F0F0F2;}
+body {background-color: #F0F0F2; display: flex; flex-direction: column;}
 
 .container{max-width: 100%; min-height: 90vh; z-index: 0; background-position: center; background-repeat: no-repeat; position: relative; background-size: cover;}
 #princ{background-image: url(../img/img-sushi.png);}
 .filter {height: 90vh; background-color: #00000025;}
-.div1{display: flex; flex-direction: column; align-items: flex-start; text-align: left;}
-
+.format{display:flex; align-items: center; justify-content: center; text-align: center;}
 
 
 .div2{ background-color: #A66D58; height: 600px; border-radius: 20px; margin-left: -20px; z-index: 1; margin: auto;}
 
 /* fonts */
-.font-title{padding: 20px; color: white; font-size: 4rem;}
-.font1{color: white; font-size: 2rem; margin: 20px;}
+.font-title{padding: 20px; color: white; font-size: 4rem; font-family: 'Quicksand';}
+.font1{color: white; font-size: 2rem; margin: 20px; font-family: 'Quicksand';}
 .font2{color: black; font-size: 1rem; margin-left: 40px;}
 
 
