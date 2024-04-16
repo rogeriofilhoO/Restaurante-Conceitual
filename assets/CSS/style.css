@@ -3,14 +3,14 @@
 body {background-color: #F0F0F2;}
 
 .container{display: flex; align-items: center;}
-.divBG{background-image: url(../img/img-sushi.png); background-size: cover; background-position: center; width: 120%; height: 600px;}
+.divBG{background-image: url(../img/img-sushi.png); background-size: cover; background-position: center; width: 130%; height: 600px; opacity: 80%;}
 
-
+.div2{ background-color: #A66D58; height: 600px; border-radius: 20px; margin-left: -20px; z-index: 1; margin: auto;}
 
 /* fonts */
-.font-title{padding: 20px; color: #A66D58; font-size: 4rem; font-family: ; font-weight: ;}
-.font1{color: #A66D58; font-size: 2rem;}
-.font2{color: #D9C5B4; font-size: 1rem; margin-left: 20px;}
+.font-title{padding: 20px; color: white; font-size: 4rem; font-family: ; font-weight: ;}
+.font1{color: white; font-size: 2rem; margin: 20px;}
+.font2{color: black; font-size: 1rem; margin-left: 40px;}
 
 
 
