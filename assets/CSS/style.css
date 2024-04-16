@@ -2,33 +2,52 @@
 
 *{margin: 0; padding: 0;}
 body {background-color: #F0F0F2; display: flex; flex-direction: column;}
+html {scroll-behavior: smooth;}
+
+
 
 /* primeira seção */
 span > a{text-decoration: none; color: #cac1c0; transition: .1s; border-radius: 20px; background-color: #ff421e; padding: 10px;}
 span > a:hover{padding: 15px; font-size: 1.7rem; color: #fff3f2; background-color: #cc3418;}
-.container{max-width: 100%; min-height: 90vh; z-index: 0; background-position: center; background-repeat: no-repeat; position: relative; background-size: cover;}
+.container{max-width: 100%; min-height: 110vh; z-index: 0; background-position: center; background-repeat: no-repeat; position: relative; background-size: cover;}
 #princ{background-image: url(../img/img-sushi.png);}
-.filter {height: 90vh; background-color: #00000025;}
+.filter {height: 110vh; background-color: #00000025;}
 .format{display:flex; align-items: center; justify-content: center; text-align: center;}
 
 /* Seunda seção */
-.container2{max-width: 100%; min-height: 90vh; z-index: 0; }
+.container2{max-width: 100%; min-height: 70vh; z-index: 0; }
 .div2{display: flex; justify-content: space-evenly; margin-top: 70px; align-items: center;}
 .div2-1{display: flex;}
 #baixo{margin-top: 230px; margin-left: 40px;}
 
 
 /* fonts */
-.font-title{padding: 20px; color: white; font-size: 4rem; font-family: 'Quicksand';}
+.font-title{color: white; font-size: 4rem; font-family: 'Quicksand';}
 .font1{color: white; font-size: 2rem; margin: 20px; font-family: 'Quicksand';}
 .font2{color: black; font-size: 1.5rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify;}
-.font3{font-size: 1.5rem;font-family: 'Quicksand';}
+.font3{font-size: 1.5rem;font-family: 'Quicksand'; margin: 10px;}
 
 
 /* Header */
 header{position: fixed; z-index: 2; background-color: #000000; width: 100vw;}
 nav{display: flex; width: 100vw; justify-content: space-between; align-items: center; flex-direction: row;}
 #sushi-logo{width: 130px; height: 130px;}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{background-color: #5a6ead; height: 50px; display: flex; align-items: center;}
+#footer{margin: auto;}
+footer p{font-family: 'Quicksand'; font-size: 1rem; color: white;}
+
 
 /* cores */
 /*  
