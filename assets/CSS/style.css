@@ -27,6 +27,7 @@ span > a:hover{padding: 15px; font-size: 1.7rem; color: #fff3f2; background-colo
 
 /* Header */
 header{position: fixed; z-index: 2;}
+#sushi-logo{width: 130px; height: 130px;}
 
 /* cores */
 /*  
