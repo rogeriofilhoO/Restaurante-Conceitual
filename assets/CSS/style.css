@@ -5,15 +5,18 @@ body {background-color: #F0F0F2; display: flex; flex-direction: column;}
 html {scroll-behavior: smooth;}
 
 /* Header */
-header{position: fixed; z-index: 2; background-color: #000000; width: 100vw;}
-nav{display: flex; width: 100vw; justify-content: space-between; align-items: center; flex-direction: row;}
-#sushi-logo{width: 130px; height: 130px;}
+header{position: fixed; z-index: 2; background-color: #000000; width: 100vw; height: 14vh; padding: 0;}
+nav{display: flex; width: 100vw; height: 14vh; justify-content: space-between; align-items: center; flex-direction: row; padding-block: 0.5vh;}
+#nav-links{width: 30vw;}
+#nav-links>a{text-decoration: none; color: #fff3f2; margin-inline: 2%; font-family: 'Quicksand'; font-size: 125%; transition: 0.15s;}
+#nav-links>a:hover{color: #cac1c0;}
+#sushi-logo{width: 105px; height: 115px; margin-block: auto;}
 /* /Header */
 
 /* MAIN */
 /* Primeira seção */
-span > a{text-decoration: none; color: #cac1c0; transition: .1s; border-radius: 20px; background-color: #ff421e; padding: 10px;}
-span > a:hover{padding: 15px; font-size: 1.7rem; color: #fff3f2; background-color: #cc3418;}
+span > a{text-decoration: none; color: #fff3f2; transition: 0.3s; border-radius: 20px; background-color: #ff421e; padding: 10px;}
+span > a:hover{padding: 15px; font-size: 1.8rem; color: #cac1c0; background-color: #cc3418; border-radius: 1.6rem}
 .container{max-width: 100%; min-height: 110vh; z-index: 0; background-position: center; background-repeat: no-repeat; position: relative; background-size: cover;}
 #princ{background-image: url(../img/img-sushi.png);}
 .filter {height: 110vh; background-color: #00000025;}
