@@ -11,8 +11,27 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="assets/img/sushi-simbolo.png" id="sushi-logo" /> </a>
+            <div id="nav-links">
+                <a href="index.html">Sobre nós</a>
+                <a href="index.html">Experimente já</a>
+                <a href="cardapio.html">Cardápio</a>
+                <a href="index.html">Contato</a>
+            </div>
+        </nav>
+    </header>
+
 
     <main>
+        <div class="title" id="title">
+            <h1 class="font-title-1">CARDÁPIO</h1>
+            <h2>SELECIONE A QUANTIDADE DOS PRATOS DESEJADOS E AO FINAL CONRFIRME O PEDIDO!</h2>
+            <a href="#pedido" style="margin-top: 30px;"><img src="assets/img/arrow.svg" alt="arrow" height="70"
+                    width="70"></a>
+        </div>
+
         <!-- Pratos
             - Uramaki :
             - Hot Roll:
@@ -28,6 +47,8 @@
             - Soba:
             - Lámen: 
         -->
+
+        <div id="pedido"></div>
 
         <form action="">
 
@@ -74,7 +95,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$10,50</label>
-                            <input type="number" name="niguri" id="niguri"value="0" >
+                            <input type="number" name="niguri" id="niguri" value="0">
                         </div>
                     </div>
                 </div>
@@ -104,7 +125,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$15,90</label>
-                            <input type="number" name="guioza" id="guioza"value="0" >
+                            <input type="number" name="guioza" id="guioza" value="0">
                         </div>
                     </div>
                 </div>
@@ -134,7 +155,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$4,90</label>
-                            <input type="number" name="gohan" id="gohan"value="0" >
+                            <input type="number" name="gohan" id="gohan" value="0">
                         </div>
                     </div>
                 </div>
@@ -149,8 +170,8 @@
                         </div>
                         <div id="preco">
                             <label for="">R$35,00</label>
-                            <input type="number" name="temaki" id="temaki"value="0"  >
-                       </div>
+                            <input type="number" name="temaki" id="temaki" value="0">
+                        </div>
                     </div>
                 </div>
                 <div class="item">
@@ -179,8 +200,8 @@
                         </div>
                         <div id="preco">
                             <label for="">R$42,00</label>
-                            <input type="number" name="teppan" id="teppan"value="0">
-                         </div>
+                            <input type="number" name="teppan" id="teppan" value="0">
+                        </div>
                     </div>
                 </div>
                 <div class="item">
@@ -210,7 +231,7 @@
                         <div id="preco">
                             <label for="">R$25,00</label>
                             <input type="number" name="soba" id="soba" value="0">
-                      </div>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
@@ -225,12 +246,19 @@
                         <div id="preco">
                             <label for="">R$48,00</label>
                             <input type="number" name="lamen" id="lamen" value="0">
-                      </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="result"></div>
+            <div class="result">
+                <span>Total: <span id="total"></span></span>
+
+                <div>
+                    <button type="reset">Cancelar Pedido</button>
+                    <button type="submit">Confirmar Pedido</button>
+                </div>
+            </div>
         </form>
 
 
