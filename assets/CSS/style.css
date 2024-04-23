@@ -15,24 +15,25 @@ nav{display: flex; width: 100vw; height: 14vh; justify-content: space-between; a
 
 /* MAIN */
 /* Primeira sessão */
-span > a{text-decoration: none; color: #fff3f2; transition: 0.3s; border-radius: 20px; background-color: #ff421e; padding: 10px;}
-span > a:hover{padding: 15px; font-size: 1.8rem; color: #cac1c0; background-color: #cc3418; border-radius: 1.6rem}
+.font-botao > a{text-decoration: none; color: #fff3f2; transition: 0.3s; border-radius: 20px; background-color: #ff421e; padding: 10px;}
+.font-botao > a:hover{padding: 15px; font-size: 1.8rem; color: #cac1c0; background-color: #cc3418; border-radius: 1.6rem}
 .container{max-width: 100%; min-height: 110vh; z-index: 0; background-position: center; background-repeat: no-repeat; position: relative; background-size: cover;}
 #princ{background-image: url(../img/img-sushi.png);}
 .filter {height: 110vh; background-color: #00000025;}
 .format{display:flex; align-items: center; justify-content: center; text-align: center;}
 
 /* Segunda sessão */
-.container2{max-width: 100%; min-height: 70vh; z-index: 0;}
+.container2{max-width: 100%; min-height: 70vh; z-index: 0; display: flex; flex-direction: row; justify-content: space-around;}
 .div2{display: flex; justify-content: space-evenly; margin-top: 70px; align-items: center; flex-direction: column;} 
 .div2-1{display: flex; flex-direction: row;}
 #baixo{margin-top: 230px; margin-left: 40px;}
 
 /* Teceira sessão */
-.container3{max-width: 100%; min-height: 70vh; z-index: 0; }
+.container3{max-width: 100%; min-height: 60vh; z-index: 0; text-align: left;}
+.divg3{display: flex; justify-content: space-evenly; margin-top: 70px; align-items: center; flex-direction: column;}
 
 /* Quarta sessão */
-.container4{max-width: 100%; min-height: 70vh; z-index: 0; }
+.container4{max-width: 100%; min-height: 20vh; z-index: 0; text-align: center;}
 
 /* /MAIN */
 
@@ -47,9 +48,17 @@ footer p{font-family: 'Quicksand'; font-size: 1rem; color: white;}
 /* Fonts */
 .font-title{color: white; font-size: 4rem; font-family: 'Quicksand';}
 .font1{color: white; font-size: 2rem; margin: 20px; font-family: 'Quicksand';}
+
 #title-font2{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
 .font2{color: black; font-size: 1.5rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify;}
-.font3{font-size: 1.5rem;font-family: 'Quicksand'; margin: 10px;}
+
+.font-botao{font-size: 1.5rem;font-family: 'Quicksand'; margin: 10px;}
+.font-botao2{font-size: 1.5rem;font-family: 'Quicksand'; margin: 10px;}
+
+#font3{color: black; font-size: 1.5rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify;}
+#title-font3{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
+
+#title-font4{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
 
 
 /* Estilizando a barra de rolagem */
