@@ -33,11 +33,14 @@ nav{display: flex; width: 100vw; height: 14vh; justify-content: space-between; a
 
 /* Teceira sessão */
 .container3{max-width: 100%; min-height: 60vh; z-index: 0; text-align: left;}
-.divg3{display: flex; justify-content: space-evenly; margin-top: 70px; align-items: center; flex-direction: column;}
+.div3{display: flex; justify-content: space-evenly; margin-top: 70px; align-items: center; flex-direction: row;}
+.div3-1{display: flex; flex-direction: column; align-items: center;}
 
 /* Quarta sessão */
-.container4{max-width: 100%; min-height: 20vh; z-index: 0;}
+.container4{max-width: 100%; min-height: 20vh; z-index: 0; margin-block-end: 2.34%;}
 .div4{display: flex; align-items: center; flex-direction: column;}
+.div4-1{display: flex; justify-content: center; width: 50%;}
+.contato-simbolo{padding: 2%;}
 
 /* /MAIN */
 
@@ -56,13 +59,13 @@ footer p{font-family: 'Quicksand'; font-size: 1rem; color: white;}
 #title-font2{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
 .font2{color: black; font-size: 1.5rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify;}
 
-.font-botao{font-size: 1.5rem;font-family: 'Quicksand'; margin: 10px;}
-.font-botao2{font-size: 1.5rem;font-family: 'Quicksand'; margin: 10px;}
+.font-botao{font-size: 1.5rem; font-family: 'Quicksand'; margin: 10px;}
+.font-botao2{font-size: 1.5rem; font-family: 'Quicksand'; margin-top: 40px;}
 
 #font3{color: black; font-size: 1.5rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify;}
-#title-font3{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
+#title-font3{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
 
-#title-font4{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; width: 500px; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
+#title-font4{color: black; font-size: 2rem; margin-left: 40px; font-family: 'Quicksand'; text-align: justify; font-weight: 700; margin-block-end: 3.5%; margin-inline-start: 0.5%;}
 
 
 /* Estilizando a barra de rolagem */
