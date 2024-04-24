@@ -10,16 +10,16 @@
 <body>
     <header>
         <nav>
-            <a href="#princ"> <img src="assets/img/sushi-simbolo.png" id="sushi-logo" /> </a>
+            <a href="index.html"> <img src="assets/img/sushi-simbolo.png" id="sushi-logo" /> </a>
             <div id="nav-links-confirmacao">
                 <a href="#confirma">Confirmar</a>
-                <a href="#confirma">Cancelar</a>
+                <a href="index.html">Cancelar</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <form action="">
+        <form action="" id="Form">
             <p id="titulo-confirmacao">Digite as informações de entrega </p>
 
         <div class="form">
@@ -61,8 +61,8 @@
         </div>
 
             <div id="confirma">
-                <span class="font-botao2"><a href="recibo.html">Confirmar informações</a></span>
-                <span class="font-botao2"><a href="index.html">Cancelar informações</a></span>
+                <span class="font-botao2"><a href="recibo.html" onclick="saveFormData();">Confirmar informações</a></span>
+                <span class="font-botao2"><a href="#" onclick="deletarData();">Cancelar informações</a></span>
             </div>
     
         </form>

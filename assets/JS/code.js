@@ -1,3 +1,6 @@
+
+// Código do Pedido 
+
 var itemsComQuantidadeValor = 0;
 
 function attData() {
@@ -99,3 +102,40 @@ function deletarData() {
     //Tirar os elementos dos campos
     document.getElementById("Form").reset();
 }
+
+
+
+// Código das Informações do pedido
+
+function saveFormData() {
+
+    const info = {
+        nome: document.getElementById("nome").value,
+        rua: document.getElementById("rua").value,
+        n: document.getElementById("numero").value,
+        complemento: document.getElementById("complemento").value,
+        bairro: document.getElementById("bairro").value,
+        celular: document.getElementById("celular").value,
+        formaPagamento: document.getElementById("formaPagamento").value,
+    }
+
+
+
+    console.log("Itens a serem salvos:", info);
+    // Criar um arquivo JSON para download
+    const jsonData = JSON.stringify(info, null, 2); // Converte os itens para formato JSON
+
+    const blob = new Blob([jsonData], { type: "application/json" }); // Cria um objeto Blob
+    const url = URL.createObjectURL(blob); // Cria uma URL para o objeto Blob
+
+    const a = document.createElement("a"); // Cria um elemento "a" para o link de download
+    a.href = url; // Define o atributo href com a URL do objeto Blob
+    a.download = "informacoesPedido.json"; // Define o atributo download com o nome do arquivo
+    a.click(); // Simula um clique no link de download
+
+    // Limpar os elementos dos campos após o download
+    document.getElementById("Form").reset();
+}
+
+
+
