@@ -8,9 +8,11 @@ html {scroll-behavior: smooth;}
 header{position: fixed; z-index: 2; background-color: #000000; width: 100vw; height: 14vh; padding: 0;}
 nav{display: flex; width: 100vw; height: 14vh; justify-content: space-between; align-items: center; flex-direction: row; padding-block: 0.5vh;}
 #nav-links{width: 35vw;}
-#nav-links>a{text-decoration: none; color: #fff3f2; margin-inline: 2%; font-family: 'Quicksand'; font-size: 125%; transition: 0.15s;}
-#nav-links>a:hover{color: #cac1c0;}
+#nav-links>a, #nav-links-confirmacao>a{text-decoration: none; color: #fff3f2; margin-inline: 2%; font-family: 'Quicksand'; font-size: 125%; transition: 0.15s;}
+#nav-links>a:hover, #nav-links-confirmacao>a:hover{color: #cac1c0;}
 #sushi-logo{width: 105px; height: 115px; margin-block: auto; margin-left: 3vw;}
+
+#nav-links-confirmacao{width: 16vw;}
 /* /Header */
 
 /* MAIN */
@@ -41,6 +43,8 @@ nav{display: flex; width: 100vw; height: 14vh; justify-content: space-between; a
 .div4{display: flex; align-items: center; flex-direction: column;}
 .div4-1{display: flex; justify-content: center; width: 50%;}
 .contato-simbolo{padding: 2%;}
+
+form{max-width: 100%; min-height: 89.9vh; z-index: 0; display: flex; flex-direction: column; justify-content: space-around; margin-block-start: 8%;}
 
 /* /MAIN */
 
