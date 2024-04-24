@@ -27,26 +27,10 @@
     <main>
         <div class="title" id="title">
             <h1 class="font-title-1">CARDÁPIO</h1>
-            <h2>SELECIONE A QUANTIDADE DOS PRATOS DESEJADOS E AO FINAL CONRFIRME O PEDIDO!</h2>
+            <h2>SELECIONE A QUANTIDADE DOS PRATOS DESEJADOS E AO FINAL CONFIRME O PEDIDO!</h2>
             <a href="#pedido" style="margin-top: 30px;"><img src="assets/img/arrow.svg" alt="arrow" height="70"
                     width="70"></a>
         </div>
-
-        <!-- Pratos
-            - Uramaki :
-            - Hot Roll:
-            - Niguri:
-            - Hossomaki:
-            - Guioza:
-            - Tempurá:
-            - Gohan:
-            - Temaki:
-            - Sunomono:
-            - Teppan:
-            - Yakissoba:
-            - Soba:
-            - Lámen: 
-        -->
 
         <div id="pedido"></div>
 
@@ -65,7 +49,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$23,00</label>
-                            <input type="number" name="uramaki" id="uramaki" value="0">
+                            <input onchange="attData()" type="number" name="uramaki" id="uramaki" value="0">
                         </div>
                     </div>
                 </div>
@@ -80,7 +64,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$20,00</label>
-                            <input type="number" name="hotroll" id="hotroll" value="0">
+                            <input onchange="attData()" type="number" name="hotroll" id="hotroll" value="0">
                         </div>
                     </div>
                 </div>
@@ -95,7 +79,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$10,50</label>
-                            <input type="number" name="niguri" id="niguri" value="0">
+                            <input onchange="attData()" type="number" name="niguri" id="niguri" value="0">
                         </div>
                     </div>
                 </div>
@@ -110,7 +94,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$8,90</label>
-                            <input type="number" name="hossomaki" id="hossomaki" value="0">
+                            <input onchange="attData()" type="number" name="hossomaki" id="hossomaki" value="0">
                         </div>
                     </div>
                 </div>
@@ -125,7 +109,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$15,90</label>
-                            <input type="number" name="guioza" id="guioza" value="0">
+                            <input onchange="attData()" type="number" name="guioza" id="guioza" value="0">
                         </div>
                     </div>
                 </div>
@@ -140,7 +124,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$17,90</label>
-                            <input type="number" name="tempura" id="tempura" value="0">
+                            <input onchange="attData()" type="number" name="tempura" id="tempura" value="0">
                         </div>
                     </div>
                 </div>
@@ -155,7 +139,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$4,90</label>
-                            <input type="number" name="gohan" id="gohan" value="0">
+                            <input onchange="attData()" type="number" name="gohan" id="gohan" value="0">
                         </div>
                     </div>
                 </div>
@@ -170,7 +154,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$35,00</label>
-                            <input type="number" name="temaki" id="temaki" value="0">
+                            <input onchange="attData()" type="number" name="temaki" id="temaki" value="0">
                         </div>
                     </div>
                 </div>
@@ -185,7 +169,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$13,99</label>
-                            <input type="number" name="sunomono" id="sunomono" value="0">
+                            <input onchange="attData()" type="number" name="sunomono" id="sunomono" value="0">
                         </div>
                     </div>
                 </div>
@@ -200,7 +184,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$42,00</label>
-                            <input type="number" name="teppan" id="teppan" value="0">
+                            <input onchange="attData()" type="number" name="teppan" id="teppan" value="0">
                         </div>
                     </div>
                 </div>
@@ -215,7 +199,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$30,99</label>
-                            <input type="number" name="yakissoba" id="yakissoba" value="0">
+                            <input onchange="attData()" type="number" name="yakissoba" id="yakissoba" value="0">
                         </div>
                     </div>
                 </div>
@@ -230,7 +214,7 @@
                         </div>
                         <div id="preco">
                             <label for="">R$25,00</label>
-                            <input type="number" name="soba" id="soba" value="0">
+                            <input onchange="attData()" type="number" name="soba" id="soba" value="0">
                         </div>
                     </div>
                 </div>
@@ -245,18 +229,18 @@
                         </div>
                         <div id="preco">
                             <label for="">R$48,00</label>
-                            <input type="number" name="lamen" id="lamen" value="0">
+                            <input onchange="attData()" type="number" name="lamen" id="lamen" value="0">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="result">
-                <span>Total: <span id="total"></span></span>
+                <span>Total: R$<span id="total"></span></span>
 
                 <div>
-                    <button type="reset">Cancelar Pedido</button>
-                    <button type="submit">Confirmar Pedido</button>
+                    <button type="button" onclick="attData();">Confirmar Pedido</button>
+                    <button type="button">Cancelar Pedido</button>
                 </div>
             </div>
         </form>
