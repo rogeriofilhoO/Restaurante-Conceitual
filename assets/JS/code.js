@@ -1,14 +1,4 @@
-// Obtendo o elemento input
-var input = document.getElementsByTagName("input");
-
-// Adicionando um ouvinte de evento para 'keydown'
-input.addEventListener("keydown", function (event) {
-    // Verificando se a tecla pressionada é 'Enter'
-    if (event.key === "Enter") {
-        // Impedindo a ação padrão (recarregar a página)
-        event.preventDefault();
-    }
-});
+var itemsComQuantidadeValor = 0;
 
 function attData() {
     const data = {
@@ -26,6 +16,7 @@ function attData() {
         sobaQNT: document.getElementById("soba").value,
         lamenQNT: document.getElementById("lamen").value,
     };
+
 
     data.uramakiVAL = data.uramakiQNT * 23.0;
     data.hotrollVAL = data.hotrollQNT * 20.0;
@@ -58,28 +49,53 @@ function attData() {
 
     var total = document.getElementById("total");
     total.innerHTML = `${result}`;
+
+
+
+    const items = [
+        { Prato: "uramaki", Quantidade: parseInt(document.getElementById("uramaki").value), Valor: data.uramakiVAL },
+        { Prato: "hotroll", Quantidade: parseInt(document.getElementById("hotroll").value), Valor: data.hotrollVAL },
+        { Prato: "niguri", Quantidade: parseInt(document.getElementById("niguri").value), Valor: data.niguriVAL },
+        { Prato: "hossomaki", Quantidade: parseInt(document.getElementById("hossomaki").value), Valor: data.hossomakiVAL },
+        { Prato: "guioza", Quantidade: parseInt(document.getElementById("guioza").value), Valor: data.guiozaVAL },
+        { Prato: "tempura", Quantidade: parseInt(document.getElementById("tempura").value), Valor: data.tempuraVAL },
+        { Prato: "gohan", Quantidade: parseInt(document.getElementById("gohan").value), Valor: data.gohanVAL },
+        { Prato: "temaki", Quantidade: parseInt(document.getElementById("temaki").value), Valor: data.temakiVAL },
+        { Prato: "sunomono", Quantidade: parseInt(document.getElementById("sunomono").value), Valor: data.sunomonoVAL },
+        { Prato: "teppan", Quantidade: parseInt(document.getElementById("teppan").value), Valor: data.teppanVAL },
+        { Prato: "yakissoba", Quantidade: parseInt(document.getElementById("yakissoba").value), Valor: data.yakissobaVAL },
+        { Prato: "soba", Quantidade: parseInt(document.getElementById("soba").value), Valor: data.sobaVAL },
+        { Prato: "lamen", Quantidade: parseInt(document.getElementById("lamen").value), Valor: data.lamenVAL }
+    ];
+
+    // Filtrar os itens com Quantidade e Valor maiores que zero
+    itemsComQuantidadeValor = items.filter(item => item.Quantidade > 0 && item.Valor > 0);
+
+    console.log(itemsComQuantidadeValor);
+
 }
 
 // Algo
 function saveData() {
-    const formData = {
-    };
 
-    //Criar um arquivo Json para Download
-    const a = document.createElement("a"); // "a" é o link do download
-    a.href = URL.createObjectURL(
-        new Blob([JSON.stringify(formData, null, 2)], { type: "aplication.json" })
-    );
-    a.setAttribute("download", "formData.json");
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    console.log("Itens a serem salvos:", itemsComQuantidadeValor);
+    // Criar um arquivo JSON para download
+    const jsonData = JSON.stringify(itemsComQuantidadeValor, null, 3); // Converte os itens para formato JSON
 
-    //Tirar os elementos dos campos
-    document.getElementById("contactForm").reset();
+    const blob = new Blob([jsonData], { type: "application/json" }); // Cria um objeto Blob
+    const url = URL.createObjectURL(blob); // Cria uma URL para o objeto Blob
+
+    const a = document.createElement("a"); // Cria um elemento "a" para o link de download
+    a.href = url; // Define o atributo href com a URL do objeto Blob
+    a.download = "recibo.json"; // Define o atributo download com o nome do arquivo
+    a.click(); // Simula um clique no link de download
+
+    // Limpar os elementos dos campos após o download
+    document.getElementById("Form").reset();
 }
+
 
 function deletarData() {
     //Tirar os elementos dos campos
-    document.getElementById("contactForm").reset();
+    document.getElementById("Form").reset();
 }
