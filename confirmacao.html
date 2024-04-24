@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/CSS/style-cardapio.css" />
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="shortcut icon" href="assets/favicon/sushi-simbolo.png" type="image/x-icon">
 </head>
@@ -13,33 +12,59 @@
         <nav>
             <a href="#princ"> <img src="assets/img/sushi-simbolo.png" id="sushi-logo" /> </a>
             <div id="nav-links-confirmacao">
-                <a href="#conforma">Confirmar</a>
-                <a href="cardapio.html">Cancelar</a>
+                <a href="#confirma">Confirmar</a>
+                <a href="#confirma">Cancelar</a>
             </div>
         </nav>
     </header>
 
     <main>
         <form action="">
-            <p>Digite as suas informações para a entrega</p>
+            <p id="titulo-confirmacao">Digite as suas informações para a entrega</p>
 
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome ">
+        <div class="form">
+            <div class="form1">
+                <label for="nome">Nome </label>
+                <input type="text" id="nome" name="nome" placeholder="Nome completo " required>
 
-            <label for="nome">Endereço: </label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome ">
+                <label for="endereco">Endereço</label>
+                    <div class="endereco">
+                        <div class="endereco-1">
+                            <label for="nome">Rua </label>
+                            <input type="text" id="nome" name="nome" placeholder="Rua " required>
 
-            <label for="nome">Número de Celular: </label>
-            <input type="text" id="telefone" name="telefone" placeholder="0000-0000" pattern="([0-9]{4})-([0-9]{4})" maxlength="9">
+                            <label for="complemento">Complemento </label>
+                            <input type="text" id="complemento" name="complemento" placeholder="Complemento " required>
+                        </div>
+                        <div class="endereco-1">
+                            <label for="numero">Número </label>
+                            <input type="text" id="numero" name="numero" placeholder="Nº " required>
 
-            <label for="formaPagamento">Forma de Pagamento</label>
-            <select id="formaPagamento" name="formaPagamento">
-                <option value="Pagamento na entrega">Pagamento na entrega</option>
-                <option value="Cartão de débito">Cartão de débito</option>
-                <option value="Cartão de crédito">Cartão de crédito</option>
-                <option value="Pix">Pix</option>
-            </select>
+                            <label for="bairro">Bairro </label>
+                            <input type="text" id="bairro" name="bairro" placeholder="Bairro ">
+                        </div>
+                    </div>
+            </div>
 
+            <div class="form1">
+                    <label for="nome">Número de Celular </label>
+                    <input type="text" id="celular" name="celular" placeholder="(00)00000-0000" pattern="(\([0-9]{2}\))([0-9]{1})([0-9]{4})-([0-9]{4})" maxlength="14" required>
+
+                    <label for="formaPagamento">Forma de Pagamento </label>
+                    <select id="formaPagamento" name="formaPagamento" required>
+                        <option value="Pagamento na entrega">Pagamento na entrega</option>
+                        <option value="Cartão de débito">Cartão de débito</option>
+                        <option value="Cartão de crédito">Cartão de crédito</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+            </div>
+        </div>
+
+            <div id="confirma">
+                <span class="font-botao2"><a href="recibo.html">Confirmar Pedido</a></span>
+                <span class="font-botao2"><a href="index.html">Cancelar Pedido</a></span>
+            </div>
+    
         </form>
     </main>
 
