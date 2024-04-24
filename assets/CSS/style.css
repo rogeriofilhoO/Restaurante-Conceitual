@@ -18,7 +18,7 @@ nav{display: flex; width: 100vw; height: 14vh; justify-content: space-between; a
 /* MAIN */
 /* Primeira sessão */
 .font-botao > a{text-decoration: none; color: #fff3f2; transition: 0.3s; border-radius: 20px; background-color: #ff421e; padding: 10px;}
-.font-botao > a:hover{padding: 15px; font-size: 1.8rem; color: #cac1c0; background-color: #cc3418; border-radius: 1.6rem}
+.font-botao > a:hover{padding: 15px; font-size: 1.8rem; color: #cac1c0; background-color: #cc3418; border-radius: 1.6rem; cursor: pointer;}
 .container{max-width: 100%; min-height: 110vh; z-index: 0; background-position: center; background-repeat: no-repeat; position: relative; background-size: cover;}
 #princ{background-image: url(../img/img-sushi.png);}
 .filter {height: 110vh; background-color: #00000025;}

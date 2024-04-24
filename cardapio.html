@@ -34,7 +34,7 @@
 
         <div id="pedido"></div>
 
-        <form action="">
+        <form action="" id="Form">
 
             <div class="container-form">
                 <div class="item">
@@ -239,8 +239,8 @@
                 <span>Total: R$<span id="total"></span></span>
 
                 <div>
-                    <button type="button" onclick="attData();">Confirmar Pedido</button>
-                    <button type="button">Cancelar Pedido</button>
+                    <a href="recibo.html"><button type="button" onclick="attData(); saveData()">Confirmar Pedido</button></a>
+                    <button type="reset" onclick="deletarData(); attData();">Cancelar Pedido</button>
                 </div>
             </div>
         </form>
